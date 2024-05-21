@@ -9,7 +9,7 @@ qu'elle langue juste en changeant la Base de donnees et les lettres.
 
 - **Entrée :** Une série de lettres (par exemple, "a, b, c, d, e, f") et un le nombre de lettres que doit comporter le mot
 - **Sortie :** Une liste de mots valides en français qui peuvent être formés à partir des lettres fournies.
--**Pour l'api:** fournir le nombre de lettres que doit comporter le mot et les lettres a utiliser(par exemple : http://127.0.0.1:8000?word_length=5&letters_provided=barise)
+-**Pour l'api:** fournir le nombre de lettres que doit comporter le mot et les lettres a utiliser(par exemple : http://example.com?word_length=5&letters_provided=barise)
 
 ## Contribuer
 
