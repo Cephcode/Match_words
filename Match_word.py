@@ -1,4 +1,6 @@
 import numpy as np
+
+
 filename = "FrenchWordDb.txt"
 Db = np.loadtxt(filename,dtype=str,delimiter=',')
 final_tab=[]
@@ -6,10 +8,7 @@ i=0
 while i<len(Db):
     final_tab.append(str(Db[i]))
     i+=1
-# # wordsDb= ["mais","fait","trait","toit","foi","moi","bois","soi"]
-# wordsDb=data
-
-letters_sequence=["z","y","t","h","u","m","s"]
+    
 
 def split_word(word):
     length=len(word)
@@ -20,7 +19,7 @@ def split_word(word):
         i+=1
     return word_splitten
 
-def matching_words(wordsDb):
+def matching_words(wordsDb,letters_sequence:list):
     matching_words_list=[]
 
     for word in wordsDb:
@@ -40,5 +39,12 @@ def matching_words(wordsDb):
     if matching_words_list==[]:
         return "sorrry ,but no words is corresponding"
     return matching_words_list
-        
-print(matching_words(Db))
+
+def words(number:int,letters_sequence:list):
+    result=[]
+    words_db=matching_words(Db,letters_sequence)
+    for word in words_db:
+        if len(word)==number:
+            result.append(word)
+    return result
+
